@@ -1,6 +1,4 @@
-import { Match } from '@g-loot/react-tournament-brackets';
-
-export const walkOverData: Match[] = [
+export const walkOverData: any[] = [
     {
         id: 260005,
         name: 'Final - Match',
