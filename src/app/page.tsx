@@ -7,10 +7,10 @@ import useSWR from "swr";
 import {useEffect} from "react";
 
 export default function Home() {
-    const { data, error, isLoading } = useSWR('/api/user',
-        fetch('https://api.challonge.com/v1/tournaments/12858808.json?api_key=qo3OH0FVeZiNeisI0qrincgrrip6gwqv8j0peA2R'))
+    const fetcher = (url) => fetch(url).then((res) => res.json());
+    const { data, error, isLoading } = useSWR('https://api.challonge.com/v1/tournaments/12858808.json?api_key=qo3OH0FVeZiNeisI0qrincgrrip6gwqv8j0peA2R', fetcher)
 
-    useEffect(() => { console.log(data)}, [data]);
+    useEffect(() => { console.log(data)}, [data])
 
   return (
     <main className={styles.main}>
