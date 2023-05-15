@@ -8,8 +8,7 @@ import {useEffect} from "react";
 
 export default function Home() {
     const { data, error, isLoading } = useSWR('/api/user',
-        fetch('https://api.challonge.com/v1/tournaments/12858808.json?api_key=qo3OH0FVeZiNeisI0qrincgrrip6gwqv8j0peA2R')
-        .then((res) => res.json()))
+        fetch('https://api.challonge.com/v1/tournaments/12858808.json?api_key=qo3OH0FVeZiNeisI0qrincgrrip6gwqv8j0peA2R'))
 
     useEffect(() => { console.log(data)}, [data]);
 
