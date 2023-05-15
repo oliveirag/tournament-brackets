@@ -315,7 +315,7 @@ export const walkOverData: any[] = [
     },
 ];
 
-export const simpleSmallBracket: Match[] = [
+export const simpleSmallBracket: any[] = [
     {
         id: 19753,
         nextMatchId: null,
@@ -435,7 +435,7 @@ export const simpleSmallBracket: Match[] = [
     },
 ];
 
-export const simpleBracket: Match[] = [
+export const simpleBracket: any[] = [
     {
         id: 19874,
         name: 'Final - Match',
